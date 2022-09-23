@@ -1,0 +1,20 @@
+@import "varabile.scss";
+
+.statistics{
+    background-color: blue;
+    border: 2px solid yellow;
+    &_items{
+        @extend .direction_element;
+        justify-content: center;
+
+    }
+    &_desc{
+        @include textStyle(20px, 500, rgb(235, 235, 17));
+    }
+    &_words{
+        @include textStyle(25px, 700, cyan);
+    }
+
+    
+   
+}

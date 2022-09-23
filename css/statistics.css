@@ -1,0 +1,30 @@
+.direction_element, .statistics_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.statistics {
+  background-color: blue;
+  border: 2px solid yellow;
+}
+
+.statistics_items {
+  justify-content: center;
+}
+
+.statistics_desc {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ebeb11;
+}
+
+.statistics_words {
+  font-size: 25px;
+  font-weight: 700;
+  color: cyan;
+}

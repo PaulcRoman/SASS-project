@@ -1,0 +1,85 @@
+.direction_element, .divHeader_lista, .statistics_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.divHeader {
+  background-color: green;
+  border: 2px solid black;
+}
+
+.divHeader:hover {
+  background-color: blue;
+}
+
+.divHeader_lista_a {
+  color: yellow;
+}
+
+.divHeader_btn {
+  background-color: red;
+}
+
+@media (max-width: 1200px) {
+  .divHeader_btn {
+    background-color: black;
+  }
+}
+
+@media (max-width: 992px) {
+  .divHeader_btn {
+    background-color: yellow;
+  }
+}
+
+.statistics_items li:nth-child(1) {
+  background-color: green;
+}
+
+.statistics_items li:nth-child(2) {
+  background-color: green;
+}
+
+.statistics_items li:nth-child(3) {
+  background-color: green;
+}
+
+.statistics_items li:nth-child(4) {
+  background-color: green;
+}
+
+.direction_element, .divHeader_lista, .statistics_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.statistics {
+  background-color: blue;
+  border: 2px solid yellow;
+}
+
+.statistics_items {
+  justify-content: center;
+}
+
+.statistics_desc {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ebeb11;
+}
+
+.statistics_words {
+  font-size: 25px;
+  font-weight: 700;
+  color: cyan;
+}

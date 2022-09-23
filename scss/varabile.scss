@@ -1,0 +1,39 @@
+// Extensie
+
+.direction_element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+// variabile
+
+$color_green:green;
+$red:red;
+// Mixim
+
+@mixin textStyle($fs,$fw,$c) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+
+ul{
+    list-style: none;
+}
+
+  @mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width: 320px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (max-width: 576px) { @content; }
+    } @else if $size == tablet-landscape-up {
+      @media (max-width: 768px) { @content; }
+    } @else if $size == desktop-up {
+      @media (max-width: 992px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (max-width: 1200px) { @content; }
+    } @else if $size == very-big-desktop-up {
+       @media (max-width: 1800px) { @content; }
+    }
+  }

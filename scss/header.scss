@@ -1,0 +1,38 @@
+@import "varabile.scss";
+
+.divHeader{
+    background-color: $color_green;
+    border: 2px solid black;
+    &:hover{
+        background-color: blue;
+    }
+    &_lista{
+        @extend .direction_element;
+        &_a{
+            color: yellow;
+        }
+    }
+    &_btn{
+        background-color: $red;
+        @include for-size(big-desktop-up){
+            background-color: black;
+           }
+       @include for-size(desktop-up){
+        background-color: yellow;
+       }
+      
+    }
+    
+}
+
+@for $var from 1 to 5 {
+    .statistics_items li:nth-child(#{$var}){
+        background-color: $color_green;
+    }    
+}
+
+
+// .statistics_items li:nth-child(2){
+//     background-color: yellow;
+// }    
+
